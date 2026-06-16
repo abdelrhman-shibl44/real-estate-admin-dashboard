@@ -1,8 +1,6 @@
-// src/components/layout/Navbar/NavbarLeft.jsx
-
 export default function NavbarLeft({ onMenuClick }) {
   return (
-    <div className="d-flex align-items-center gap-3">
+    <div className="d-flex align-items-center gap-2">
       {/* Mobile menu button */}
       <button
         className="btn btn-outline-secondary d-md-none"
@@ -11,10 +9,12 @@ export default function NavbarLeft({ onMenuClick }) {
         <i className="bi bi-list"></i>
       </button>
 
-      {/* Page title */}
+      {/* Title (simplified on mobile) */}
       <div>
-        <h5 className="mb-0 fw-bold">Real Estate Dashboard</h5>
-        <small className="text-muted">Manage properties & clients</small>
+        <h6 className="mb-0 fw-bold">Dashboard</h6>
+        <small className="text-muted d-none d-md-block">
+          Manage properties & clients
+        </small>
       </div>
     </div>
   );

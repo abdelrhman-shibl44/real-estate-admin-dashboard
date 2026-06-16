@@ -6,6 +6,8 @@ import { properties } from "../data/properties";
 export default function PropertyDetails() {
   const { id } = useParams();
 
+  //note: in real life we will use useEffect to specific data to the user when id changes
+
   const property = properties.find((p) => p.id === Number(id));
 
   const [selectedImage, setSelectedImage] = useState(property?.images?.[0]);
