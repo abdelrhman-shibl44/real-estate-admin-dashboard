@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function Layout() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -19,6 +20,8 @@ export default function Layout() {
           <Outlet /> {/* Dashboard or Properties or Details */}
         </main>
       </div>
+
+      <Footer />
     </div>
   );
 }
