@@ -59,6 +59,69 @@ body {
   z-index: 999;
 }
 
+/* Property Card */
+.property-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.property-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.property-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.badge {
+  border-radius: 20px;
+  padding: 6px 12px;
+}
+
+/* Status Badges */
+.badge-available {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.badge-sold {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.badge-reserved {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+/* Gallery */
+.gallery-main img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.gallery-thumb img {
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.gallery-thumb img:hover,
+.gallery-thumb img.active {
+  opacity: 1;
+  outline: 3px solid var(--secondary-color);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .sidebar {
