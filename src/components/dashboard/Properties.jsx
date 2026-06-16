@@ -1,15 +1,18 @@
 import { useState } from "react";
-
-import { Link } from "react-router-dom";
 import { properties } from "../../data/properties";
 import PropertyCard from "./propertyCard";
+import useDebounce from "../../hooks/useDebounce";
 
 export default function Properties() {
   const [search, setSearch] = useState("");
   const [statusFilter, setStatusFilter] = useState("All");
+  const debounceSearch = useDebounce(search, 500);
 
   const filtered = properties.filter((p) => {
-    const matchSearch = p.name.toLowerCase().includes(search.toLowerCase());
+    const matchSearch = p.name
+      .toLowerCase()
+      .includes(debounceSearch.toLowerCase());
+
     const matchStatus = statusFilter === "All" || p.status === statusFilter;
 
     return matchSearch && matchStatus;
