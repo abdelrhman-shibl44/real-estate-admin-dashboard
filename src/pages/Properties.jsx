@@ -1,7 +1,7 @@
-import React from "react";
-
+import { properties } from "../data/properties";
+import PropertiesCards from "../components/PropertiesCards";
 const Properties = () => {
-  return <div>Properties</div>;
+  return <PropertiesCards properties={properties} />;
 };
 
 export default Properties;
