@@ -46,13 +46,13 @@ export default function RecentProperties({ properties }) {
 
                 <td>
                   <span
-                    className={
+                    className={`badge ${
                       p.status === "Available"
                         ? "badge-available"
                         : p.status === "Sold"
                           ? "badge-sold"
                           : "badge-reserved"
-                    }
+                    }`}
                   >
                     {p.status}
                   </span>
