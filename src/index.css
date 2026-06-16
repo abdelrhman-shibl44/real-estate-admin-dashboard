@@ -49,6 +49,16 @@ body {
   flex-direction: column;
 }
 
+/* Navbar */
+.top-navbar {
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 12px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .sidebar {
