@@ -122,6 +122,73 @@ body {
   outline: 3px solid var(--secondary-color);
 }
 
+/* Dashboard Table Card */
+.dashboard-table {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Table Header */
+.dashboard-table thead {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.dashboard-table thead th {
+  font-weight: 500;
+  padding: 14px;
+  border: none;
+}
+
+/* Table Body */
+.dashboard-table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.dashboard-table tbody tr:hover {
+  background-color: rgba(201, 168, 76, 0.08);
+}
+
+/* Table Property Thumbnail */
+.table-property-img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #eee;
+  transition: all 0.2s ease;
+}
+
+.table-property-img:hover {
+  transform: scale(1.05);
+  border-color: var(--secondary-color);
+}
+/* Table row hover (SaaS style) */
+.table-row-clickable {
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+/* optional subtle active click */
+.table-row-clickable:active {
+  background-color: rgba(201, 168, 76, 0.15); /* secondary tint */
+}
+
+/* Optional: active click effect */
+.table-row-clickable:active {
+  transform: scale(0.999);
+}
+
+/* Table Cells */
+.dashboard-table td {
+  padding: 14px;
+  vertical-align: middle;
+  border-color: #eee;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .sidebar {

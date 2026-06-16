@@ -1,4 +1,4 @@
-import RecentProperties from "../components/dashboard/Properties";
+import RecentProperties from "../components/dashboard/RecentProperties";
 import StatCard from "../components/dashboard/StatCard";
 import { properties } from "../data/properties";
 
