@@ -3,7 +3,7 @@ import { properties } from "../../data/properties";
 import PropertyCard from "./propertyCard";
 import useDebounce from "../../hooks/useDebounce";
 
-export default function Properties() {
+export default function PropertiesCards() {
   const [search, setSearch] = useState("");
   const [statusFilter, setStatusFilter] = useState("All");
   const debounceSearch = useDebounce(search, 500);
