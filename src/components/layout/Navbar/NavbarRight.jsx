@@ -1,11 +1,10 @@
+import NavbarSearch from "./NavbarSearch";
+
 export default function NavbarRight() {
   return (
     <div className="d-flex align-items-center gap-3 gap-md-3">
       {/* Search (hidden on small screens) */}
-      <button className="btn btn-light d-none d-md-inline-flex">
-        <i className="bi bi-search"></i>
-      </button>
-
+      <NavbarSearch />
       {/* Notifications */}
       <button className="btn btn-light position-relative">
         <i className="bi bi-bell"></i>
@@ -16,7 +15,6 @@ export default function NavbarRight() {
           3
         </span>
       </button>
-
       {/* User: show only avatar on mobile */}
       <div className="d-flex align-items-center gap-2">
         <div

@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="footer mt-auto">
-      <div className="container-fluid py-3 d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div className="container-fluid py-2 d-flex flex-column flex-md-row justify-content-between align-items-center">
         <p className="mb-0">
           © {new Date().getFullYear()} Real Estate Admin Dashboard
         </p>
