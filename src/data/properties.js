@@ -136,12 +136,3 @@ export const properties = [
     ],
   },
 ];
-
-export const stats = {
-  totalProperties: properties.length,
-  totalClients: 124,
-  newRequests: 18,
-  totalSales: properties
-    .filter((p) => p.status === "Sold")
-    .reduce((sum, p) => sum + p.price, 0),
-};
