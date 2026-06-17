@@ -38,7 +38,7 @@ export default function PropertyDetails() {
 
       <div className="row g-4">
         {/* LEFT SIDE - GALLERY */}
-        <div className="col-md-6">
+        <div className="col-md-6 overflow-scroll">
           {/* MAIN IMAGE */}
           <div className="gallery-main mb-3">
             <img src={selectedImage} alt={property.name} />

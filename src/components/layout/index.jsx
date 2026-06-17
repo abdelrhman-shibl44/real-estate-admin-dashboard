@@ -16,7 +16,7 @@ export default function Layout() {
       {/* Main Content */}
       <div className="main-content">
         <Navbar onMenuClick={() => setSidebarOpen(true)} />
-        <main className="p-4 flex-grow-1">
+        <main className="px-2 px-md-4 py-4 flex-grow-1">
           <Outlet /> {/* Dashboard or Properties or Details */}
         </main>
       </div>
