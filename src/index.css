@@ -36,6 +36,10 @@
   --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
+.bg-custom-light {
+  background-color: hsl(216deg 29.41% 96.67% / 49%);
+}
+
 body {
   background-color: var(--bg-light);
   font-family: "Segoe UI", sans-serif;
@@ -285,5 +289,12 @@ body {
 
   .footer .d-flex {
     justify-content: center;
+  }
+}
+
+/* Mobile only: applies overflow-x */
+@media (max-width: 768px) {
+  .mobile-overflow-x {
+    overflow-x: auto;
   }
 }

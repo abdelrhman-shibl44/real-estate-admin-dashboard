@@ -24,7 +24,7 @@ export default function PropertyDetails() {
   }
 
   return (
-    <div className="container py-4">
+    <div className="container-fluid py-4">
       {/* TOP ACTIONS */}
       <div className="d-flex justify-content-between align-items-center mb-4">
         <Link to="/properties" className="btn btn-secondary">
@@ -38,7 +38,7 @@ export default function PropertyDetails() {
 
       <div className="row g-4">
         {/* LEFT SIDE - GALLERY */}
-        <div className="col-md-6 overflow-scroll">
+        <div className="col-lg-6 mobile-overflow-x pb-3">
           {/* MAIN IMAGE */}
           <div className="gallery-main mb-3">
             <img src={selectedImage} alt={property.name} />
@@ -59,7 +59,7 @@ export default function PropertyDetails() {
         </div>
 
         {/* RIGHT SIDE - INFO */}
-        <div className="col-md-6">
+        <div className="col-lg-6 col-12 bg-custom-light bg-opacity-10">
           <h2 className="mb-2">{property.name}</h2>
 
           <p className="text-muted mb-2">{property.location}</p>

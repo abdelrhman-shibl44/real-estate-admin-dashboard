@@ -1,6 +1,6 @@
 export default function NavbarRight() {
   return (
-    <div className="d-flex align-items-center gap-2 gap-md-3">
+    <div className="d-flex align-items-center gap-3 gap-md-3">
       {/* Search (hidden on small screens) */}
       <button className="btn btn-light d-none d-md-inline-flex">
         <i className="bi bi-search"></i>
@@ -9,7 +9,10 @@ export default function NavbarRight() {
       {/* Notifications */}
       <button className="btn btn-light position-relative">
         <i className="bi bi-bell"></i>
-        <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        <span
+          className="position-absolute start-100 translate-middle py-0.5 small text-white top-3 rounded-pill bg-danger fw-bold"
+          style={{ paddingLeft: "0.7rem", paddingRight: "0.7rem" }}
+        >
           3
         </span>
       </button>
